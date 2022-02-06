@@ -14,4 +14,9 @@ class Inventory extends Model
         'price',
         'quantity'
     ];
+
+    protected $casts = [
+        'quantity' => 'integer',
+        'price' => 'float'
+    ];
 }
